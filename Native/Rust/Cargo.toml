@@ -1,0 +1,27 @@
+[package]
+name = "ffi"
+version = "0.1.0"
+authors = ["Scott Kane <scottpkane94@gmail.com>"]
+publish = false
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib","staticlib"]
+
+[dependencies.libc]
+version = "0.2"
+
+[dependencies.lazy_static]
+version = "1"
+
+[dependencies.failure]
+version = "0.1"
+
+[dependencies.failure_derive]
+version = "0.1"
+
+[dependencies.sled]
+version = "0.19"
+
+[dependencies.rental]
+version = "0.5.6"
